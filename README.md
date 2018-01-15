@@ -3,8 +3,4 @@
 ## 深入浅出 Webpack
 
 ### 说明
-可以直接使用 `require('./xxx.css')` 来引入样式，`Webpack` 也会分析依赖关系。
-但是由于 `Webpack` 默认并没有 css 文件的处理器，所以需要添加`css-loader`。
-
-### 疑问
-1. 为什么使用 `import('./xxx.css')` 会打包出两个文件来？
+使用 `extract-text-webpack-plugin` 将 CSS 内容从 JavaScript 文件中抽取出来，放到单独的 CSS 文件中。
